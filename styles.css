@@ -1,0 +1,264 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #FFFFE0; /* Light yellow background */
+}
+
+/* Container for the quiz */
+#container{
+    width: 50%;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin: 5% auto;
+    border: 2px solid dimgray;
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+/* Logo and welcome note styles */
+.logo, .wellcome-note, #name-input, .note, .category-heading {
+    margin: 0.5rem;
+}
+
+/* Input and button styles */
+#name-input, .name-button, .category-button {
+    height: 2rem;
+}
+
+#name-input {
+    margin: 0.5rem auto; 
+    width: 100%; 
+    max-width: 500px;
+    padding: 0.5rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+}
+
+.name-button {
+    width: 10%;
+    background-color: #0000FF; /* Blue */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-button {
+    width: 30%;
+    margin: 1rem 3rem;
+    background-color: #0000FF; /* Blue */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.logo {
+    width: 6rem;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#question-container {
+    width: 75%;
+    height: 20vh;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9; 
+    margin-top: auto;
+}
+
+/* Question count styles */
+#question-count {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    left: 48%;
+    top: 30vh;
+    background-color: royalblue; /* Blue background */
+    color: #fff; /* White text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Option button styles */
+.option-container { 
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+}
+.option-container button{
+        padding: 10px 20px;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        border: solid gray;
+        margin: 3px;
+}
+.option-container button:hover {
+    background-color: whitesmoke; 
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+/* Styling the button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px; /* Add padding for spacing */
+    position: relative;
+}
+
+/* General button styling */
+.button-container button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Positioning buttons */
+#previous-button {
+    position: absolute;
+    left: 0; /* Align to the left corner */
+    background-color: #3498db; /* Blue */
+    color: white;
+    border: solid gray;
+}
+
+#next-button {
+    position: absolute;
+    right: 0; /* Align to the right corner */
+    background-color: #2ecc71; /* Green */
+    color: white;
+    border: solid gray;
+}
+
+#submit-button {
+    margin: 0 auto; /* Center the Submit button */
+    background-color: #e74c3c; /* Red */
+    color: white;
+    border: solid gray;
+}
+
+/* Hover effects */
+.button-container button:hover {
+    background-color: #2980b9; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+#next-button:hover {
+    background-color: #27ae60; /* Darker green */
+}
+
+#submit-button:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+/* Active button effect */
+.button-container button:active {
+    transform: scale(0.95); /* Slight shrink effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Disable button styling */
+.button-container button:disabled {
+    background-color: #bdc3c7; /* Grey */
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+#score-container {
+    align-self: flex-start;
+    color: #2c3e50;
+}
+#timer-container {
+    align-self: flex-start;
+    color: #c0392b;
+}
+.question-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: solid black;
+    position: absolute;
+    left: 50%; 
+    top: 28%; 
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    text-align: center;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.result-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.result-item {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.result-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px; 
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.result-button:hover {
+    background-color: #3e8e41;
+    border: 2px solid gray; 
+}
